@@ -42,6 +42,6 @@ For each case, your code should output the minimum number of times Captain Shind
 6
 ```
 
-**Sample Explanation 0*
+**Sample Explanation 0**
 
 To be smart about the order in which ammo is changed, Capt. Shinde comes up with a great idea. For example, in the first sequence, he could start by loading ammo-6 to the first gun, and use the first gun two times to demolish two level-6 targets. Then he could use the second gun with ammo-11. This leaves the first gun still with ammo-6, which he can use for the last time. As a result, he changed the ammo **2 times**
