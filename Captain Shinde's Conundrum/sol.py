@@ -1,43 +1,38 @@
-def main():
-    test_cases = int(input())
+def solution(ammo_damage):
+    gun_1 = 0
+    gun_2 = 0
 
-    for _ in range(test_cases):
-        num_colors = int(input())
-        colors_sequence = [int(x) for x in input().split()]
+    num_reloads = 0
 
-        print(process_test(colors_sequence))
-
-
-def process_test(colors_sequence):
-    left = 0
-    right = 0
-
-    num_switches = 0
-
-    for i in range(len(colors_sequence)):
-        if colors_sequence[i] == left or colors_sequence[i] == right:
+    for i in range(len(ammo_damage)):
+        if ammo_damage[i] == gun_1 or ammo_damage[i] == gun_2:
             continue
         else:
             picked = False
-            for j in colors_sequence[i+1:]:
-                if j == left:
-                    num_switches += 1
-                    right = colors_sequence[i]
+            for j in ammo_damage[i+1:]:
+                if j == gun_1:
+                    num_reloads += 1
+                    gun_2 = ammo_damage[i]
                     picked = True
                     break
-                elif j == right:
-                    num_switches += 1
-                    left = colors_sequence[i]
+                elif j == gun_2:
+                    num_reloads += 1
+                    gun_1 = ammo_damage[i]
                     picked = True
                     break
                 else:
                     continue
 
             if not picked:
-                num_switches += 1
-                left = colors_sequence[i]
+                num_reloads += 1
+                gun_1 = ammo_damage[i]
 
-    return num_switches
+    return num_reloads
 
 
-main()
+cases = int(input())
+for times in range(cases):
+    num_levels = int(input())
+    ammo_damage = [int(x) for x in input().split()]
+
+    print(solution(ammo_damage))
