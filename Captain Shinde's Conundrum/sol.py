@@ -1,6 +1,3 @@
-#!/bin/env python
-
-
 def main():
     test_cases = int(input())
 
@@ -24,13 +21,11 @@ def process_test(colors_sequence):
             picked = False
             for j in colors_sequence[i+1:]:
                 if j == left:
-                    # pick right
                     num_switches += 1
                     right = colors_sequence[i]
                     picked = True
                     break
                 elif j == right:
-                    # pick left
                     num_switches += 1
                     left = colors_sequence[i]
                     picked = True
@@ -39,7 +34,6 @@ def process_test(colors_sequence):
                     continue
 
             if not picked:
-                # default left
                 num_switches += 1
                 left = colors_sequence[i]
 
