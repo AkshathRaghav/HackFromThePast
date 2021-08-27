@@ -6,35 +6,38 @@ Positive value refers to direct proportionality, the increase in one leads to th
 
 From the data provided to you, you are required to compute the relation between the 2 quantities using the formula given.
 
-Ν Σxy – Σx Σy/√(NΣx² - (Σx) ²) (NΣy² - (Σy)²)
-N is equal to the number of pairs of values in the data
-x and y are a given pair of values
-Σxy is the sum of the products of paired scores
-Σx the sum of the scores of one data set
-Σy the sum of the scores of the other data set
-Σx² is the sum of the squares of the scores of one data set
+Ν Σxy – Σx Σy/√(NΣx² - (Σx) ²) (NΣy² - (Σy)²) <br> 
+N is equal to the number of pairs of values in the data <br> 
+x and y are a given pair of values <br> 
+Σxy is the sum of the products of paired scores <br> 
+Σx the sum of the scores of one data set <br> 
+Σy the sum of the scores of the other data set <br> 
+Σx² is the sum of the squares of the scores of one data set <br> 
 Σy² is the sum of the squares of the scores of the other data set
 
 
 **Input Format**
 
-x, contains the number of states,
-n, the name of the state,
-y, percentage of cigaretter smokers,
+x, contains the number of states, <br> 
+n, the name of the state, <br> 
+y, percentage of cigaretter smokers, <br> 
 z, number of lung cancer cases per thousand
-Constraints
 
-x is an integer such that 1 ≤ x ≤ 10,
-n is a string containing the name of the state,
+
+**Constraints** 
+
+x is an integer such that 1 ≤ x ≤ 10, <br> 
+n is a string containing the name of the state, <br> 
 y and z for each state are float values with a single decimal point
+
 
 **Output Format**
 
-At the end of the test case, your code should output the relation between the two quantities given. Make sure to print the first 2 places after decimal without rounding off
-
-For example,
-`0.69`
-
+At the end of the test case, your code should output the relation between the two quantities given. Make sure to print the first 2 places after decimal without rounding off <br> <br> 
+For example, <br> 
+```
+0.69
+```
 
 **Sample Input 0**
 
